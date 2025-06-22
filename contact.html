@@ -31,6 +31,41 @@
     </nav>
 
     <main>
+        <form class="contact-form-container">
+
+            <div class="contact-input-section">
+                <div class="form-field">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="*First Name" size="20" maxlength="50" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="*Last Name" size="20" maxlength="50" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="*Email" size="20" maxlength="254" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Phone (optional)" size="20" maxlength="15" pattern="^(\d{3}[-\s]?\d{3}[-\s]?\d{4})$">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message (required)" rows="5" cols="75" maxlength="750" required></textarea>
+                </div>
+            </div>
+
+            <div class="submit-reset-section">
+                <input type="submit" id="submit-button" value="submit">
+                <input type="reset" id="reset-button" value="reset">
+            </div>
+
+        </form>
     </main>
 
     <footer>
